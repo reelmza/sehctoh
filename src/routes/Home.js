@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 
 // Featured project images
-import featuredProjectA from "../images/hero/Slide-A.webp";
+import featuredProjectA from "../images/hero/Slide-C.webp";
 import featuredProjectB from "../images/featured-projects/project-B.jpeg";
 import featuredProjectC from "../images/featured-projects/project-C.jpeg";
 
