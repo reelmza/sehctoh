@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 
 // Featured project images
-import featuredProjectA from "../images/hero/Slide-A.jpg";
+import featuredProjectA from "../images/hero/Slide-A.webp";
 import featuredProjectB from "../images/featured-projects/project-B.jpeg";
 import featuredProjectC from "../images/featured-projects/project-C.jpeg";
 
@@ -44,7 +44,7 @@ const Home = () => {
       >
         {/* Slide A */}
         <SwiperSlide className="slide-a h-full w-full px-5 lg:px-32">
-          <div className="h-full w-[100vw] mx-[-20px] lg:mx-[-128px] px-5 lg:px-[128px] bg-[rgba(0,0,0,0.5)] text-white flex flex-col justify-center items-center">
+          <div className="h-full w-[100vw] mx-[-20px] lg:mx-[-128px] px-5 lg:px-[128px] bg-[rgba(0,0,0,0.6)] text-white flex flex-col justify-center items-center">
             <div className="title mb-5 lg:mb-16 text-4xl lg:text-6xl font-semibold text-center">
               Satisfied Local & <br /> Global Clients
             </div>
@@ -69,8 +69,8 @@ const Home = () => {
         </SwiperSlide>
 
         {/* Slide B */}
-        <SwiperSlide className="slide-b h-full w-full px-5 lg:px-32 bg-black">
-          <div className="h-full w-[100vw] mx-[-20px] lg:mx-[-128px] px-5 lg:px-[128px] bg-[rgba(0,0,0,0.5)] text-white flex flex-col justify-center items-center">
+        <SwiperSlide className="slide-b h-full w-full px-5 lg:px-32">
+          <div className="h-full w-[100vw] mx-[-20px] lg:mx-[-128px] px-5 lg:px-[128px] bg-[rgba(0,0,0,0.6)] text-white flex flex-col justify-center items-center">
             <div className="title mb-5 lg:mb-16 text-4xl lg:text-6xl font-semibold text-center">
               Best Architectural
               <br /> Services
@@ -96,8 +96,8 @@ const Home = () => {
         </SwiperSlide>
 
         {/* Slide C */}
-        <SwiperSlide className="slide-c h-full w-full px-5 lg:px-32 bg-black">
-          <div className="h-full w-[100vw] mx-[-20px] lg:mx-[-128px] px-5 lg:px-[128px] bg-[rgba(0,0,0,0.5)] text-white flex flex-col justify-center items-center">
+        <SwiperSlide className="slide-c h-full w-full px-5 lg:px-32">
+          <div className="h-full w-[100vw] mx-[-20px] lg:mx-[-128px] px-5 lg:px-[128px] bg-[rgba(0,0,0,0.6)] text-white flex flex-col justify-center items-center">
             <div className="title mb-5 lg:mb-16 text-4xl lg:text-6xl font-semibold text-center">
               Immpresive <br /> Statistics Record
             </div>
@@ -123,7 +123,7 @@ const Home = () => {
       </Swiper>
 
       {/* Projects section */}
-      <div className="projects-overview mb-10 lg:mb-20">
+      <div className="projects-overview mb-10 lg:mb-20" id="projects">
         <div className="mb-8 px-5 lg:px-32 text-3xl font-semibold text-center">
           Sehctor Projects
         </div>
@@ -251,7 +251,7 @@ const Home = () => {
       </div>
 
       {/* Services section */}
-      <div className="services mb-20">
+      <div className="services mb-20" id="services">
         <div className="mb-8 px-5 lg:px-32 text-3xl font-semibold text-center">
           Sehctor Services
         </div>

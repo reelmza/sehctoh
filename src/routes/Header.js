@@ -1,4 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
+import facebookIcon from "../images/all/facebook.png";
+import messageIcon from "../images/all/message.png";
 
 const Header = () => {
   const activeDesktopNavStyle = { color: "blue", fontWeight: "600" };
@@ -239,49 +241,35 @@ const Header = () => {
           </li>
 
           <li className="mr-5">
-            <NavLink to={"/#message-box"} className="hover:text-black">
+            <a href={"#contact"} className="hover:text-black">
               MESSAGE US
-            </NavLink>
+            </a>
           </li>
         </ul>
 
         {/* Nav Socials */}
         <div className="social flex h-full">
-          <div className="facebook h-full flex items-center border-x px-6">
-            <Link to="https://facebook.com/sehctoharc">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-                />
-              </svg>
+          <div className="instagram h-full flex items-center border-x px-6">
+            <Link to="/contact">
+              <img
+                className="h-[32px]"
+                src={facebookIcon}
+                alt="facebook icon png"
+              />
             </Link>
           </div>
-          <div className="instagram h-full flex items-center border-r px-6">
-            <Link to="https://facebook.com/sehctoharc">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
-                />
-              </svg>
-            </Link>
+          <div className="facebook h-full flex items-center border-r px-6">
+            <a
+              href="https://facebook.com/jerrye8"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                className="h-[32px]"
+                src={messageIcon}
+                alt="message icon png"
+              />
+            </a>
           </div>
         </div>
       </div>

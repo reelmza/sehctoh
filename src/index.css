@@ -1,15 +1,15 @@
 .slide-a {
-  background: url("./images/hero/Slide-A.jpg") no-repeat;
+  background: url("./images/hero/Slide-A.webp") no-repeat;
   background-size: cover;
 }
 
 .slide-b {
-  background: url("./images/hero/Slide-B.jpg") no-repeat;
+  background: url("./images/hero/Slide-B.webp") no-repeat;
   background-size: cover;
 }
 
 .slide-c {
-  background: url("./images/hero/Slide-C.jpg") no-repeat;
+  background: url("./images/hero/Slide-C.webp") no-repeat;
   background-size: cover;
 }
 
