@@ -10,13 +10,23 @@ const Footer = () => {
         {/* Name */}
         <div className="form-control w-full mb-4">
           <div className="mb-1 text-sm text-white">Name:</div>
-          <input className="w-full h-10 p-3 rounded-sm" type="text" required />
+          <input
+            className="w-full h-10 p-3 rounded-sm"
+            type="text"
+            name="sender-name"
+            required
+          />
         </div>
 
         {/* Email */}
         <div className="form-control w-full mb-4">
           <div className="mb-1 text-sm text-white">E-mail:</div>
-          <input className="w-full h-10 p-3 rounded-sm" type="email" required />
+          <input
+            className="w-full h-10 p-3 rounded-sm"
+            type="email"
+            name="sender-email"
+            required
+          />
         </div>
 
         {/* Text */}
@@ -24,7 +34,7 @@ const Footer = () => {
           <div className="mb-1 text-sm text-white">Message:</div>
           <textarea
             className="w-full h-28 p-3 rounded-sm"
-            name="message"
+            name="sender-message"
             maxLength={50}
           ></textarea>
         </div>
