@@ -1,5 +1,27 @@
 import { Link } from "react-router-dom";
+import axios from "axios";
+
 const Footer = () => {
+  // Form handler function
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const contactForm = e.target;
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await axios({
+        url: "/",
+        method: "post",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        params: new URLSearchParams(formData).toString(),
+      });
+
+      console.log(response);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   return (
     <div className="w-full flex flex-wrap justify-between px-5 lg:px-32 py-10 bg-slate-900">
       <form
@@ -8,6 +30,7 @@ const Footer = () => {
         className="form w-full mb-10 lg:mb-0 lg:w-[25%]"
         name="contact"
         data-netlify="true"
+        onSubmit={handleSubmit}
       >
         {/* Name */}
         <div className="form-control w-full mb-4">
