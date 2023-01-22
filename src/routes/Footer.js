@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   // Form handler function
-  // eslint-disable-next-line no-unused-vars
   const handleSubmit = async (e) => {
     e.preventDefault();
     const contactForm = e.target;
@@ -10,7 +9,7 @@ const Footer = () => {
 
     console.log(new URLSearchParams(formData).toString());
 
-    fetch("/", {
+    fetch("https://sehctoharchitects.com", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
@@ -25,7 +24,8 @@ const Footer = () => {
         className="form w-full mb-10 lg:mb-0 lg:w-[25%]"
         name="contact"
         method="post"
-        netlify
+        data-netlify="true"
+        onSubmit={handleSubmit}
       >
         {/* Name */}
         <div className="form-control w-full mb-4">
@@ -59,7 +59,7 @@ const Footer = () => {
           ></textarea>
         </div>
 
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="contact" value="contact" />
 
         <button
           className="h-12 w-full flex items-center justify-center shadow rounded-sm bg-gradient-to-tr from-blue-600 to-blue-500 text-white"
