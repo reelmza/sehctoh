@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="w-full flex flex-wrap justify-between px-5 lg:px-32 py-10 bg-slate-900">
-      <form className="form w-full mb-10 lg:mb-0 lg:w-[25%]">
+      <form
+        className="form w-full mb-10 lg:mb-0 lg:w-[25%]"
+        name="footer-messages"
+        netlify
+      >
         {/* Name */}
         <div className="form-control w-full mb-4">
           <div className="mb-1 text-sm text-white">Name:</div>
@@ -25,7 +29,10 @@ const Footer = () => {
           ></textarea>
         </div>
 
-        <button className="h-12 w-full flex items-center justify-center shadow rounded-sm bg-gradient-to-tr from-blue-600 to-blue-500 text-white">
+        <button
+          className="h-12 w-full flex items-center justify-center shadow rounded-sm bg-gradient-to-tr from-blue-600 to-blue-500 text-white"
+          type="submit"
+        >
           <div className="font-semibold mb-[2px] mr-1">Send Message</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
