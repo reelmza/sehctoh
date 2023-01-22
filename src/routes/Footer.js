@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   // Form handler function
+  // eslint-disable-next-line no-unused-vars
   const handleSubmit = async (e) => {
     e.preventDefault();
     const contactForm = e.target;
@@ -24,8 +25,7 @@ const Footer = () => {
         className="form w-full mb-10 lg:mb-0 lg:w-[25%]"
         name="contact"
         method="post"
-        data-netlify="true"
-        onSubmit={handleSubmit}
+        netlify
       >
         {/* Name */}
         <div className="form-control w-full mb-4">
