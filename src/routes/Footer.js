@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 const Footer = () => {
   // Form handler function
@@ -9,18 +8,14 @@ const Footer = () => {
     const formData = new FormData(contactForm);
 
     console.log(new URLSearchParams(formData).toString());
-    try {
-      const response = await axios({
-        url: "/",
-        method: "post",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        data: new URLSearchParams(formData).toString(),
-      });
 
-      console.log(response);
-    } catch (e) {
-      console.log(e);
-    }
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
   };
 
   return (
