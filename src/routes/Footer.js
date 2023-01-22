@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   // Form handler function
+  // eslint-disable-next-line no-unused-vars
   const handleSubmit = async (e) => {
     e.preventDefault();
     const contactForm = e.target;
@@ -24,16 +25,16 @@ const Footer = () => {
         className="form w-full mb-10 lg:mb-0 lg:w-[25%]"
         name="contact"
         method="post"
-        data-netlify="true"
-        onSubmit={handleSubmit}
       >
+        <input type="hidden" name="contact" value="contact" />
+
         {/* Name */}
         <div className="form-control w-full mb-4">
           <div className="mb-1 text-sm text-white">Name:</div>
           <input
             className="w-full h-10 p-3 rounded-sm"
             type="text"
-            name="sender-name"
+            name="name"
             required
           />
         </div>
@@ -44,7 +45,7 @@ const Footer = () => {
           <input
             className="w-full h-10 p-3 rounded-sm"
             type="email"
-            name="sender-email"
+            name="email"
             required
           />
         </div>
@@ -54,13 +55,10 @@ const Footer = () => {
           <div className="mb-1 text-sm text-white">Message:</div>
           <textarea
             className="w-full h-28 p-3 rounded-sm"
-            name="sender-message"
+            name="message"
             maxLength={50}
           ></textarea>
         </div>
-
-        <input type="hidden" name="contact" value="contact" />
-
         <button
           className="h-12 w-full flex items-center justify-center shadow rounded-sm bg-gradient-to-tr from-blue-600 to-blue-500 text-white"
           type="submit"
