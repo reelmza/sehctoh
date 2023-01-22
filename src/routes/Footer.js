@@ -23,6 +23,7 @@ const Footer = () => {
       <form
         className="form w-full mb-10 lg:mb-0 lg:w-[25%]"
         name="contact"
+        method="post"
         data-netlify="true"
         onSubmit={handleSubmit}
       >
@@ -57,6 +58,8 @@ const Footer = () => {
             maxLength={50}
           ></textarea>
         </div>
+
+        <input type="hidden" name="form-name" value="contact" />
 
         <button
           className="h-12 w-full flex items-center justify-center shadow rounded-sm bg-gradient-to-tr from-blue-600 to-blue-500 text-white"
