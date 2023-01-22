@@ -48,7 +48,7 @@ const Home = () => {
             <div className="title mb-5 lg:mb-16 text-4xl lg:text-6xl font-semibold text-center">
               Satisfied Local & <br /> Global Clients
             </div>
-            <Link to={"/clients"}>
+            <a href="#clients">
               <button className="h-12 px-8 lg:px-10 flex items-center shadow rounded-sm bg-blue-600">
                 <div className="mr-1 font-semibold">Our Clients</div>
                 <svg
@@ -64,7 +64,7 @@ const Home = () => {
                   />
                 </svg>
               </button>
-            </Link>
+            </a>
           </div>
         </SwiperSlide>
 
@@ -329,7 +329,10 @@ const Home = () => {
       </div>
 
       {/* Clients */}
-      <div className="bg-slate-900 text-white py-20 px-5 lg:px-32 mb-10 lg:mb-20">
+      <div
+        className="bg-slate-900 text-white py-20 px-5 lg:px-32 mb-10 lg:mb-20"
+        id="clients"
+      >
         <div className="pb-20 text-3xl font-semibold text-center">
           Client Feedbacks
         </div>
