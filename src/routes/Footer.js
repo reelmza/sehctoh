@@ -8,12 +8,13 @@ const Footer = () => {
     const contactForm = e.target;
     const formData = new FormData(contactForm);
 
+    console.log(new URLSearchParams(formData).toString());
     try {
       const response = await axios({
         url: "/",
         method: "post",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        params: new URLSearchParams(formData).toString(),
+        data: new URLSearchParams(formData).toString(),
       });
 
       console.log(response);
