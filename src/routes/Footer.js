@@ -4,8 +4,9 @@ const Footer = () => {
     <div className="w-full flex flex-wrap justify-between px-5 lg:px-32 py-10 bg-slate-900">
       <form
         className="form w-full mb-10 lg:mb-0 lg:w-[25%]"
-        name="footer-messages"
-        netlify
+        name="contact"
+        data-netlify="true"
+        method="POST"
       >
         {/* Name */}
         <div className="form-control w-full mb-4">
