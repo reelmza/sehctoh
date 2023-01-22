@@ -26,7 +26,7 @@ const Footer = () => {
         name="contact"
         method="post"
       >
-        <input type="hidden" name="contact" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
 
         {/* Name */}
         <div className="form-control w-full mb-4">
