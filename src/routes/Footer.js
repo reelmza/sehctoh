@@ -3,10 +3,11 @@ const Footer = () => {
   return (
     <div className="w-full flex flex-wrap justify-between px-5 lg:px-32 py-10 bg-slate-900">
       <form
-        method="post"
+        method="POST"
+        action="/contact"
         className="form w-full mb-10 lg:mb-0 lg:w-[25%]"
         name="contact"
-        netlify
+        data-netlify="true"
       >
         {/* Name */}
         <div className="form-control w-full mb-4">
